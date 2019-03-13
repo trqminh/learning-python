@@ -1,0 +1,5 @@
+ref: https://www.youtube.com/watch?v=jCzT9XFZ5bw&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc&index=6
+
++ @property (get), @setter (set) @deleter (del)
++ Using decorator to change attribute to method, so we can get, set or delete
+more effective and we can customize them for our purpose

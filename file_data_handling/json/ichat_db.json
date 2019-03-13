@@ -1,0 +1,164 @@
+{
+  "Groups" : {
+    "Học tập" : {
+      "-LWGq2RFXKGfO6wBau1p" : {
+        "date" : "Th1 15, 2019",
+        "message" : "chào mn",
+        "name" : "Harry Potter",
+        "time" : "09:09 PM"
+      },
+      "-LWGw4W3WtP1M12hzLyS" : {
+        "date" : "Jan 15, 2019",
+        "message" : "Chào các bạn",
+        "name" : "Nguyễn Sĩ Hùng",
+        "time" : "09:35 AM"
+      },
+      "-LWGwZSWG2oVkILP1sRS" : {
+        "date" : "Th1 15, 2019",
+        "message" : "hi all",
+        "name" : "Sasuke Uchiha",
+        "time" : "09:37 PM"
+      },
+      "-LWKWCmgamGwcQS0GPje" : {
+        "date" : "Th1 16, 2019",
+        "message" : "134",
+        "name" : "Trần Quang Minh",
+        "time" : "02:16 PM"
+      }
+    },
+    "Tết" : {
+      "-LY2W1OIHUrESop0jdo5" : {
+        "date" : "Th2 06, 2019",
+        "message" : "hello",
+        "name" : "Trần Quang Minh",
+        "time" : "10:54 PM"
+      },
+      "-L_HCDhXcpr6JwEWoQAa" : {
+        "date" : "Th3 06, 2019",
+        "message" : "hello",
+        "name" : "Thanos",
+        "time" : "03:53 PM"
+      }
+    },
+    "nope" : {
+      "-LWxJrHDz6TWLsEAoOh9" : {
+        "date" : "Th1 24, 2019",
+        "message" : "any one?",
+        "name" : "Trần Quang Minh",
+        "time" : "07:47 AM"
+      }
+    }
+  },
+  "Users" : {
+    "387wxczh26XGOVov612jsU0PO4F3" : {
+      "User state" : {
+        "date" : "Th3 06, 2019",
+        "state" : "offline",
+        "time" : "03:53 PM"
+      },
+      "name" : "Thanos",
+      "status" : "thích búng tay",
+      "uid" : "387wxczh26XGOVov612jsU0PO4F3"
+    },
+    "64s4HBrrI0dGI0kNzwwWLVgK1QV2" : {
+      "User state" : {
+        "date" : "Th1 16, 2019",
+        "state" : "offline",
+        "time" : "02:21 PM"
+      },
+      "name" : "Trúc Nguyễn",
+      "status" : "mẹ của minh",
+      "uid" : "64s4HBrrI0dGI0kNzwwWLVgK1QV2"
+    },
+    "C7oLTViipCSgf1JdXd9DrPyiMSk2" : {
+      "User state" : {
+        "date" : "Th2 06, 2019",
+        "state" : "offline",
+        "time" : "10:54 PM"
+      },
+      "name" : "Trần Quang Minh",
+      "status" : "K16 HCMUS",
+      "uid" : "C7oLTViipCSgf1JdXd9DrPyiMSk2"
+    },
+    "EnM0Lf3fwrRL9AkCS43iWDia1Kq2" : {
+      "User state" : {
+        "date" : "Th2 07, 2019",
+        "state" : "offline",
+        "time" : "08:53 PM"
+      },
+      "name" : "Quang",
+      "status" : "tml",
+      "uid" : "EnM0Lf3fwrRL9AkCS43iWDia1Kq2"
+    },
+    "OmgX82NmUoedcW13hElf3pbpwpA2" : {
+      "User state" : {
+        "date" : "Jan 15, 2019",
+        "state" : "offline",
+        "time" : "11:41 AM"
+      },
+      "name" : "Nguyễn Sĩ Hùng",
+      "status" : "K16 - HCMUS",
+      "uid" : "OmgX82NmUoedcW13hElf3pbpwpA2"
+    },
+    "PaMaT6CrZpR0rOQKf3A8iGk47iV2" : {
+      "User state" : {
+        "date" : "Th1 15, 2019",
+        "state" : "offline",
+        "time" : "09:15 PM"
+      },
+      "name" : "Son Goku",
+      "status" : "xaya tóc vàng",
+      "uid" : "PaMaT6CrZpR0rOQKf3A8iGk47iV2"
+    },
+    "edCpd9tM5ahdbvZcNHzQTQTwxhy2" : {
+      "User state" : {
+        "date" : "Th1 15, 2019",
+        "state" : "offline",
+        "time" : "09:07 PM"
+      },
+      "name" : "Naruto Uzumaki",
+      "status" : "Best Hokage",
+      "uid" : "edCpd9tM5ahdbvZcNHzQTQTwxhy2"
+    },
+    "f31GifJY8ibDvNtu5DPckDV18qk2" : {
+      "User state" : {
+        "date" : "Jan 15, 2019",
+        "state" : "offline",
+        "time" : "09:27 AM"
+      },
+      "name" : "Trần Hưng Đạo",
+      "status" : "Đã đánh tan 2 lần xâm lược quân Mông-Nguyên",
+      "uid" : "f31GifJY8ibDvNtu5DPckDV18qk2"
+    },
+    "poxyC5quiYQPVUecnLYW1JiVkhX2" : {
+      "User state" : {
+        "date" : "Th1 15, 2019",
+        "state" : "offline",
+        "time" : "09:09 PM"
+      },
+      "name" : "Harry Potter",
+      "status" : "phù thủy bá đạo",
+      "uid" : "poxyC5quiYQPVUecnLYW1JiVkhX2"
+    },
+    "sgf9Lk6kNsTBcDujfXbhfyowAsB3" : {
+      "User state" : {
+        "date" : "Th2 07, 2019",
+        "state" : "offline",
+        "time" : "08:58 PM"
+      },
+      "name" : "luan",
+      "status" : "jjjj",
+      "uid" : "sgf9Lk6kNsTBcDujfXbhfyowAsB3"
+    },
+    "tiLNYZzMm3RMDkPm8Tv57CyYUqm2" : {
+      "User state" : {
+        "date" : "Th1 15, 2019",
+        "state" : "offline",
+        "time" : "09:38 PM"
+      },
+      "name" : "Sasuke Uchiha",
+      "status" : "love Hinata",
+      "uid" : "tiLNYZzMm3RMDkPm8Tv57CyYUqm2"
+    }
+  }
+}

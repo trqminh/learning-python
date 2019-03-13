@@ -1,0 +1,88 @@
+reference: https://dbader.org/blog/meaning-of-underscores-in-python
+
+1. Single leading underscores are a Python naming convention indicating a name is meant for internal use. It is generally not enforced by the Python interpreter and meant as a hint to the programmer only.
+2. Single trailing underscore (postfix) is used by convention to avoid naming conflicts with Python keywords.
+3. Double leading underscores
+# Some example
+
+#1st example:
+class Test:
+    def __init__(self):
+        self.foo = 11
+        self._bar = 23
+        self.__baz = 23
+
+>>> t = Test()
+>>> dir(t)
+['_Test__baz', '__class__', '__delattr__', '__dict__', '__dir__',
+ '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__',
+ '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__',
+ '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__',
+ '__setattr__', '__sizeof__', '__str__', '__subclasshook__',
+ '__weakref__', '_bar', 'foo']
+
+
+ class ExtendedTest(Test):
+    def __init__(self):
+        super().__init__()
+        self.foo = 'overridden'
+        self._bar = 'overridden'
+        self.__baz = 'overridden'
+
+
+>>> t2 = ExtendedTest()
+>>> t2.foo
+'overridden'
+>>> t2._bar
+'overridden'
+>>> t2.__baz
+AttributeError: "'ExtendedTest' object has no attribute '__baz'"
+
+>>> dir(t2)
+['_ExtendedTest__baz', '_Test__baz', '__class__', '__delattr__',
+ '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__',
+ '__getattribute__', '__gt__', '__hash__', '__init__', '__le__',
+ '__lt__', '__module__', '__ne__', '__new__', '__reduce__',
+ '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__',
+ '__subclasshook__', '__weakref__', '_bar', 'foo', 'get_vars']
+
+>>> t2._ExtendedTest__baz
+'overridden'
+
+>>> t2._Test__baz
+42
+
+------------------------------------------------------------------------
+#2nd example
+
+class MangledMethod:
+    def __method(self):
+        return 42
+
+    def call_it(self):
+        return self.__method()
+
+>>> MangledMethod().__method()
+AttributeError: "'MangledMethod' object has no attribute '__method'"
+>>> MangledMethod().call_it()
+42
+
+------------------------------------------------------------------------
+3rd example
+_MangledGlobal__mangled = 23
+
+class MangledGlobal:
+    def test(self):
+        return __mangled
+
+>>> MangledGlobal().test()
+23
+------------------------------------------------------------------------
+
+4. Double leading and trailing underscore
+It’s best to stay away from using names that start and end with double underscores (“dunders”) in your own programs to avoid collisions with future changes to the Python language.
+
+5. Single underscore
+Using for temporary variables or just "don't care" variables
+
+

@@ -1,0 +1,6 @@
+{
+"Dataset": "ex1data.txt",
+  "Theta": [2, 1],
+  "Alpha": 0.01,
+  "NumIter": 5
+}
