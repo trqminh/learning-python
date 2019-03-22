@@ -20,3 +20,8 @@ tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=tf_train_labels, l
 optimizer = tf.train.GradientDescentOptimizer(0.5).minimize(loss)
 Call optimizer in session for optimize loss with alpha = 0.5
 ```
+
+## model
+
+![](https://github.com/1612374/learning-python/blob/master/tensorflow/SGD_one_hidden_relu/Add%20relu%20to%20be%20nrnw_0.png)
+![](https://github.com/1612374/learning-python/blob/master/tensorflow/SGD_one_hidden_relu/Add%20relu%20to%20be%20nrnw_1.png)
