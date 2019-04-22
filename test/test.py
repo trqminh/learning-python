@@ -1,44 +1,44 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+n, m = list(map(int, input().split(' ')))
 
-import six
-import os
+mat = [None for i in range(n)]
 
-if six.PY3:
-    from urllib.request import urlopen
+for i in range(n):
+    mat[i] = list(map(int, input().split(' ')))
+
+
+tmp_xor = 0
+for i in range(n):
+    tmp_xor ^= mat[i][0]
+
+
+if tmp_xor:
+    print('TAK')
+    for i in range(n):
+        print('1 ', end = '')
 else:
-    from urllib2 import urlopen
+    flag = False
+    idx = 0
+    val = 0
+    for i in range(n):
+        for j in range(m):
+            if mat[i][j] != mat[i][0]:
+                flag = True
+                idx = i
+                val = j
+                break
 
-from gensim.models.word2vec import Text8Corpus
+        if flag:
+            break
 
-URL = ("http://mattmahoney.net/dc/"
-	   "text8.zip")
-ARCHIVE_NAME = "text8.zip"
+    if flag:
+        print('TAK')
+        for i in range(idx):
+            print('1', end = ' ')
 
-def download_text8(target_dir=None):
-    """
-    Download the text8.zip data and stored it in target_dir.
-    (http://mattmahoney.net/dc/text8.zip)
+        print(val+1, end = ' ')
 
-    if the target_dir is not speficed, then create a folder
-    named 'GENSIM_DATA' in the user home folder
-    """
+        for i in range(idx+1, n, 1):
+            print('1', end = ' ')
+    else:
+        print('NIE')
 
-    if target_dir is None:
-        target_dir = os.path.join("~", "GENSIM_DATA")
-
-    target_dir = os.path.expanduser(target_dir)
-    archive_path = os.path.join(target_dir, ARCHIVE_NAME)
-
-    if os.path.exists(archive_path):
-        # Download is not complete as the zip file is removed after download.
-        os.remove(archive_path)
-    
-    opener = urlopen(URL)
-    with open(archive_path, 'wb') as f:
-        f.write(opener.read())
-
-    return archive_path
-
-if __name__ == "__main__":
-    file_path = download_text8("~")

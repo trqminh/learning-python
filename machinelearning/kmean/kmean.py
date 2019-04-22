@@ -44,7 +44,7 @@ def kmean_update_center(X, labels, k):
     for label in range(k):
         centers = np.append(centers, np.average(X[labels == label], axis = 0))
     
-    centers = np.reshape(centers, [3,2])
+    centers = np.reshape(centers, [k,2])
     return centers
  
 def kmean_check_converge(centers, new_centers):
@@ -84,12 +84,14 @@ def kmean(X, k):
 
 def main():
     N = 500
-    k = 3
+    k = 5
     X0 = two_d_normal_distribtion([0,0], [[1,0],[0,1]], N)
     X1 = two_d_normal_distribtion([2,5], [[1,0],[0,1]], N)
     X2 = two_d_normal_distribtion([7,3], [[1,0],[0,1]], N)
+    X3 = two_d_normal_distribtion([6,1], [[1,0],[0,1]], N)
+    X4 = two_d_normal_distribtion([-2,-2],[[1,0],[0,1]], N)
 
-    X = np.concatenate((X1, X2, X0), axis = 0)
+    X = np.concatenate((X1, X2, X0,X3,X4), axis = 0)
     
     #display data
     plt.scatter(X[:,0], X[:,1])
