@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6143a9fe-dcd2-424b-a039-3e1d79e4bb19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/softmax_regression/softmax_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/softmax_regression/softmax_regression.py" afterDir="false" />
-    </list>
+    <list default="true" id="6143a9fe-dcd2-424b-a039-3e1d79e4bb19" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +13,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logistic_regression/logistic_regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
+            <state relative-caret-position="120">
               <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -27,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/softmax_regression/softmax_regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="426">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -70,7 +68,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,6 +109,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,9 +213,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="0" width="1335" height="774" extended-state="6" />
+    <frame x="36" y="0" width="1336" height="774" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980783" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -260,7 +259,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logistic_regression/logistic_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
+        <state relative-caret-position="120">
           <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -270,8 +269,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/softmax_regression/softmax_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="426">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
