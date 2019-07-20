@@ -2,6 +2,8 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data.dataloader import DataLoader
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 class SoftmaxRegression:
@@ -28,8 +30,7 @@ class SoftmaxRegression:
                 loss.backward()
                 self.optimizer.step()
 
-            # print('loss at epoch: ', loss)
-        print('loss: ', loss.item())
+        print('loss at last epoch: ', loss.item())
 
     def accuracy_on_train_set(self):
         correct = 0
@@ -44,4 +45,29 @@ class SoftmaxRegression:
                 total += labels.shape[0]
 
         return correct/total
+
+    @staticmethod
+    def draw(w, b):
+        x = np.linspace(0, 10, 100)
+        y = (w[0] * x + b) / -w[1]
+
+        plt.plot(x, y)
+
+    def visualize(self):
+        params = list(self.weights.parameters())
+
+        weight = params[0]
+        bias = params[1]
+
+        # print((weight[0] - weight[1]).numpy())
+        # print((bias[0] - bias[1]).numpy())
+
+        with torch.no_grad():
+            for i in range(0, weight.shape[0] - 1, 1):
+                for j in range(i + 1, weight.shape[0], 1):
+                    w = weight[i] - weight[j]
+                    b = bias[i] - bias[j]
+                    w = w.numpy()
+                    b = b.numpy()
+                    self.draw(w, b)
 
